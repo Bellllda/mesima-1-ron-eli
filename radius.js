@@ -13,7 +13,7 @@ calculate.onclick = function (e) {
     var rad = document.getElementById("radius").value;
     var radius = parseInt(rad)
     if (isNaN(radius)){
-        alert("Please write a number in the radius texbox")
+        alert("Please write a number in the radius textbox")
     } else {
     if (radius > 200) {
         alert("The radius is bigger then the canvas! please rewrite the radius with a smaller radius");
