@@ -10,29 +10,45 @@
             height: 400;
             border: 2px solid;
         }
+        
+        #left {
+            float: left;
+            margin-left: 100px;
+            
+        }
+        #right {
+            float: right;
+            margin-top: 150px;
+            margin-right: 250px;
+        }
+
     </style>
 </head>
 <body>
-    <div>
+    <div id="left">
             <form>
+                <h1>Input radius value and get volume of sphere</h1>
+                <h2>Radius</h2>
+                <input id="radius" type="number" placeholder="Max radius is 200">
             
-                <label>Enter the radius: </label>
-                <input id="radius" type="number">
-            
-            <button id="calc">Calculate</button>
-             <button id="clear">Clear</button>   
+            <button id="calc">Calculate</button>   
         </form>
 
-        
-        <span id="vol"></span>
+        <br>
+        <span><h2>Volume</h2>
+            <input type="text" id="vol">
+        </span>
 
 
 
     </div>
-    <div>
-        <canvas id="canvas" width="500" height="400"></canvas>
+    <div id="flex">
+        <div id="right">
+            <h2>Drawing on Canvas!</h2>
+            <canvas id="canvas" width="500" height="400"></canvas>
+            <br><button id="clear">Clear</button>
+        </div>
     </div>
-
 
 
 

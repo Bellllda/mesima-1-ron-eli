@@ -19,7 +19,7 @@ calculate.onclick = function (e) {
     else {
         //Volume Calc
         var volume = (4/3) * Math.PI * Math.pow(radius, 3);
-            document.getElementById("vol").innerHTML = volume
+            document.getElementById("vol").value = volume
 
         ctx.beginPath();
         ctx.arc(centerX,centerY, radius, 0, 2 * Math.PI)    
