@@ -12,6 +12,7 @@ var calculate = document.getElementById("calc");
 calculate.onclick = function (e) {
     var rad = document.getElementById("radius").value;
     var radius = parseInt(rad)
+    e.preventDefault()
     //checking if input is number
     if (isNaN(radius)){
         alert("Please write a number in the radius textbox")
