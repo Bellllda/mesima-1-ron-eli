@@ -12,9 +12,11 @@ var calculate = document.getElementById("calc");
 calculate.onclick = function (e) {
     var rad = document.getElementById("radius").value;
     var radius = parseInt(rad)
+    //checking if input is number
     if (isNaN(radius)){
         alert("Please write a number in the radius textbox")
     } else {
+    //checking if input is bigger then the canvas
     if (radius > 200) {
         alert("The radius is bigger then the canvas! please rewrite the radius with a smaller radius");
 
