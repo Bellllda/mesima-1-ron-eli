@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Radius Value to Sphere Volume</title>
     <style>
         #canvas {
             width: 500;
             height: 400;
             border: 2px solid;
         }
-        
+
         #left {
             float: left;
             margin-left: 100px;
-            
+
         }
+
         #right {
             float: right;
             margin-top: 150px;
             margin-right: 250px;
         }
 
+        button {
+            color: rgb(231, 231, 231);
+            background-color: rgb(0, 119, 216);
+            border: none;
+            padding: 4px 7px
+        }
+
+        #clear {
+            padding: 7px 236px;
+        }
     </style>
 </head>
+
 <body>
     <div id="left">
-            <form>
-                <h1>Input radius value and get volume of sphere</h1>
-                <h2>Radius</h2>
-                <input id="radius" type="number" placeholder="Max radius is 200">
-            
-            <button id="calc">Calculate</button>   
+        <h1>Input radius value and get volume of sphere</h1><br>
+        <form>
+            <h2>Radius</h2>
+            <input id="radius" type="number" placeholder="Max radius is 200">
+
+            <button id="calc">Calculate</button>
         </form>
 
         <br>
-        <span><h2>Volume</h2>
+        <span>
+            <h2>Volume</h2>
             <input type="text" id="vol">
         </span>
 
 
 
     </div>
-    <div id="flex">
+    <div>
         <div id="right">
             <h2>Drawing on Canvas!</h2>
             <canvas id="canvas" width="500" height="400"></canvas>
@@ -57,4 +71,5 @@
 
     <script src="radius.js"></script>
 </body>
+
 </html>
